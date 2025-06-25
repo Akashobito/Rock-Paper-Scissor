@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10-.Rock paper scissor game link</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="main-container">
+      <p>
+        Rock Paper Scissor
+      </p>
+
+      <div class="flexbox">
+        <button onclick=" 
+          playGame('Rock');
+          ">
+          <img src="Images/Rock-emoji.png" alt="rock-img">
+        </button>
+
+        <button onclick=" 
+          playGame('Paper');
+        ">
+          <img src="Images/Paper-emoji.png" alt="paper-img">
+        </button>
+
+        <button onclick=" 
+          playGame('Scissor');
+        ">
+          <img src="Images/Scissor-emoji.png" alt="scissor-img">
+        </button>
+        
+      </div>
+
+         <p class="result">
+
+        </p>
+
+        <p class="moves">
+        
+        </p>
+
+        <p class="score-text">
+
+        </p>
+
+        
+
+        
+
+        <button class="result-button" onclick="
+          score = {
+          wins: 0,
+          losses: 0,
+          tie: 0
+          }
+          localStorage.setItem('score', JSON.stringify(score));
+          ">
+          Reset Score
+        </button>
+
+    </div>
+    
+   
+
+    
+ 
+
+    <script src="script.js">
+    </script>
+
+  </body>
+</html>
